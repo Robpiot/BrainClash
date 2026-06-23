@@ -1,6 +1,4 @@
-@import "tailwindcss/preflight";
-
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --font-body: "Inter", "Helvetica Neue", sans-serif;
@@ -24,7 +22,7 @@
   body {
     background-color: #09090b;
     color: #e4e4e7;
-    font-family: var(--font-body);
+    font-family: var(--font-body), serif;
     min-height: 100dvh;
     line-height: 1.6;
   }
