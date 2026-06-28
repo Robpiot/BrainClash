@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import React from "react";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -285,7 +286,7 @@ export default function MainSection() {
                     <h2 id="cta-heading" className="text-3xl font-extrabold tracking-tight text-white">Ready to prove your knowledge?</h2>
                     <p className="mt-4 text-base text-zinc-400">Create your free account and join thousands of players competing every day.</p>
                     <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                        <Link href="/register" className="inline-flex items-center gap-2 rounded-xl bg-violet-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-violet-900/50 transition-all hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 active:scale-95">
+                        <Link href="/login" className="inline-flex items-center gap-2 rounded-xl bg-violet-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-violet-900/50 transition-all hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 active:scale-95">
                             Create Free Account
                         </Link>
                         <Link href="/play" className="rounded-sm text-sm font-medium text-zinc-400 underline-offset-4 transition-colors hover:text-white hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500">

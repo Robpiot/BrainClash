@@ -21,7 +21,7 @@ const FOOTER_LINKS: Record<string, FooterLinkItem[]> = {
         { label: "Tournaments",    href: "/tournaments" },
     ],
     Account: [
-        { label: "Sign Up",        href: "/register" },
+        { label: "Sign Up",        href: "/login    " },
         { label: "Log In",         href: "/login" },
         { label: "Profile",        href: "/profile" },
         { label: "Stats",          href: "/stats" },
