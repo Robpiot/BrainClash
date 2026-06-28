@@ -52,7 +52,7 @@ function Badge({ children, color = "violet" }: { children: React.ReactNode; colo
 
 function StatCard({ value, label, icon }: StatCardProps) {
     return (
-        <div className="flex flex-col gap-1 rounded-xl border border-white/[0.08] bg-white/[0.03] p-5 transition-colors hover:bg-white/[0.05]">
+        <div className="flex flex-col gap-1 rounded-xl border border-white/8 bg-white/3 p-5 transition-colors hover:bg-white/5">
             <div className="flex items-center justify-between">
                 <span className="text-2xl font-bold tabular-nums text-white">{value}</span>
                 <span className="text-zinc-500">{icon}</span>
@@ -69,11 +69,11 @@ function ModeCard({ title, description, badge, badgeColor, cta, href, highlight 
                 "group relative flex flex-col gap-5 rounded-2xl border p-6 transition-all duration-200",
                 highlight
                     ? "border-violet-500/40 bg-violet-950/30 hover:border-violet-400/60 hover:shadow-lg hover:shadow-violet-900/30"
-                    : "border-white/[0.08] bg-white/[0.03] hover:border-white/20 hover:bg-white/[0.06]",
+                    : "border-white/8 bg-white/3 hover:border-white/20 hover:bg-white/5",
             ].join(" ")}
         >
             {highlight && (
-                <div aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-violet-500/5 via-transparent to-fuchsia-500/5" />
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-br from-violet-500/5 via-transparent to-fuchsia-500/5" />
             )}
             <Badge color={badgeColor}>{badge}</Badge>
             <div className="flex flex-col gap-2">
